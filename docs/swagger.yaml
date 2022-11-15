@@ -1,0 +1,293 @@
+definitions:
+  model.Quest4AData:
+    properties:
+      city:
+        type: string
+      colorPm25:
+        type: string
+      concPm25:
+        type: string
+      county:
+        type: string
+      id:
+        type: integer
+      latitude:
+        type: number
+      longtitude:
+        type: number
+      pm25:
+        type: number
+      population:
+        type: number
+      region:
+        type: string
+      wbinc16:
+        type: string
+      year:
+        type: integer
+    type: object
+  model.Quest4AResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/model.Quest4AData'
+        type: array
+    type: object
+  model.Quest4BData:
+    properties:
+      avgPm25:
+        type: number
+      county:
+        type: string
+    type: object
+  model.Quest4BResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/model.Quest4BData'
+        type: array
+    type: object
+  model.Quest4CData:
+    properties:
+      city:
+        type: string
+      colorPm25:
+        type: string
+      concPm25:
+        type: string
+      county:
+        type: string
+      id:
+        type: integer
+      latitude:
+        type: number
+      longtitude:
+        type: number
+      pm25:
+        type: number
+      population:
+        type: number
+      region:
+        type: string
+      wbinc16:
+        type: string
+      year:
+        type: integer
+    type: object
+  model.Quest4CResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/model.Quest4CData'
+        type: array
+    type: object
+  model.Quest4DResponse:
+    properties:
+      data:
+        type: number
+    type: object
+  model.Quest5AData:
+    properties:
+      city:
+        type: string
+      county:
+        type: string
+      id:
+        type: integer
+      latitude:
+        type: number
+      longtitude:
+        type: number
+    type: object
+  model.Quest5AResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/model.Quest5AData'
+        type: array
+    type: object
+  model.Quest5BData:
+    properties:
+      city:
+        type: string
+      colorPm25:
+        type: string
+      concPm25:
+        type: string
+      county:
+        type: string
+      distance:
+        type: number
+      id:
+        type: integer
+      latitude:
+        type: number
+      longtitude:
+        type: number
+      pm25:
+        type: number
+      population:
+        type: number
+      region:
+        type: string
+      wbinc16:
+        type: string
+      year:
+        type: integer
+    type: object
+  model.Quest5BResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/model.Quest5BData'
+        type: array
+    type: object
+  model.Quest5FData:
+    properties:
+      city:
+        type: string
+      county:
+        type: string
+      id:
+        type: integer
+      latitude:
+        type: number
+      longtitude:
+        type: number
+    type: object
+  model.Quest5FResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/model.Quest5FData'
+        type: array
+    type: object
+info:
+  contact: {}
+paths:
+  /api/quest4/a:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.Quest4AResponse'
+      summary: Get Quest 4A
+      tags:
+      - quest4-api
+  /api/quest4/b:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.Quest4BResponse'
+      summary: Get Quest 4B
+      tags:
+      - quest4-api
+  /api/quest4/c/{country}:
+    get:
+      parameters:
+      - description: country
+        in: path
+        name: country
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.Quest4CResponse'
+      summary: Get Quest 4C
+      tags:
+      - quest4-api
+  /api/quest4/d/{year}/{color}:
+    get:
+      parameters:
+      - description: year
+        in: path
+        name: year
+        required: true
+        type: string
+      - description: color
+        in: path
+        name: color
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.Quest4DResponse'
+      summary: Get Quest 4D
+      tags:
+      - quest4-api
+  /api/quest4/str:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: test
+      tags:
+      - quest4-api
+  /api/quest5/a/{year}:
+    get:
+      parameters:
+      - description: year
+        in: path
+        name: year
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.Quest5AResponse'
+      summary: Get Quest 5A
+      tags:
+      - quest5-api
+  /api/quest5/b:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.Quest5BResponse'
+      summary: Get Quest 5B
+      tags:
+      - quest5-api
+  /api/quest5/f/{year}:
+    get:
+      parameters:
+      - description: year
+        in: path
+        name: year
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.Quest5FResponse'
+      summary: Get Quest 5F
+      tags:
+      - quest5-api
+swagger: "2.0"
