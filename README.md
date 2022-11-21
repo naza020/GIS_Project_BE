@@ -19,7 +19,7 @@ http://localhost:9090/swagger/
 ## Database
  config อยู่ใน cmd/api/app/app.go
 
-x= latitude y=longtitude
+x= latitude y=longitude
 
   default config
 ```bash
@@ -47,7 +47,7 @@ CREATE TABLE AirPollutionPM25(
     Year int,
     Pm25 float,
     Latitude float,
-    Longtitude float,
+    Longitude float,
     Population float,
     Wbinc16_text varchar(255),
     Region varchar(255),

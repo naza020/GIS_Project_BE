@@ -8,12 +8,12 @@ BEGIN
 DECLARE
 @ID int,
 @Latitude float,
-@Longtitude float
+@Longitude float
 SELECT @ID= INSERTED.[ID],
 @Latitude= INSERTED.[Latitude],
-@Longtitude= INSERTED.[Longtitude] FROM INSERTED
+@Longitude= INSERTED.[Longitude] FROM INSERTED
 IF EXISTS(SELECT * FROM dbo.AirPollutionPM25 WHERE ID=@ID)
 	BEGIN
-		UPDATE dbo.AirPollutionPM25 SET geom=geometry::Point(@Latitude,@Longtitude,4326) WHERE ID=@ID
+		UPDATE dbo.AirPollutionPM25 SET geom=geometry::Point(@Latitude,@Longitude,4326) WHERE ID=@ID
 	END
 END

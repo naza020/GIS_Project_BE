@@ -11,7 +11,7 @@ type Quest4DResponse struct {
 // 	Year       int     `json:"year"`
 // 	Pm25       float64 `json:"pm25"`
 // 	Latitude   float64 `json:"latitude"`
-// 	Longtitude float64 `json:"longtitude"`
+// 	Longitude float64 `json:"longitude"`
 // 	Population float64 `json:"population"`
 // 	Wbinc16    string  `json:"wbinc16"`
 // 	Region     string  `json:"region"`

@@ -5,9 +5,9 @@ type Quest5EResponse struct {
 }
 
 type Quest5EData struct {
-	ID         int     `json:"id"`
-	Country    string  `json:"county"`
-	City       string  `json:"city"`
-	Latitude   float64 `json:"latitude"`
-	Longtitude float64 `json:"longtitude"`
+	ID        int     `json:"id"`
+	Country   string  `json:"county"`
+	City      string  `json:"city"`
+	Latitude  float64 `json:"latitude"`
+	Longitude float64 `json:"longitude"`
 }

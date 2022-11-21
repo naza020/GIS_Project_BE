@@ -6,7 +6,7 @@ import (
 )
 
 func (service *quest5UseCase) QuestC() (*model.Quest5CResponse, error) {
-	// query := fmt.Sprintf("SELECT [ID],[Country],[City],[Year],[Pm25],[Latitude],[Longtitude],[Population],[Wbinc16_text],[Region],[Conc_pm25],[Color_pm25] FROM dbo.AirPollutionPM25 WHERE Year=%s", year)
+	// query := fmt.Sprintf("SELECT [ID],[Country],[City],[Year],[Pm25],[Latitude],[Longitude],[Population],[Wbinc16_text],[Region],[Conc_pm25],[Color_pm25] FROM dbo.AirPollutionPM25 WHERE Year=%s", year)
 	var country []string
 	fQuery := `DECLARE @Country geometry = 'POLYGON EMPTY'
 	SELECT @Country = geom
@@ -35,9 +35,9 @@ func (service *quest5UseCase) QuestC() (*model.Quest5CResponse, error) {
 			countryString += ","
 		}
 	}
-	secQuery := fmt.Sprintf(`SELECT Country,City,Latitude,Longtitude
+	secQuery := fmt.Sprintf(`SELECT Country,City,Latitude,Longitude
 	FROM [SpatialDB].[dbo].[AirPollutionPM25] WHERE Country IN (%s) 
-	GROUP BY Country,City,Latitude,Longtitude
+	GROUP BY Country,City,Latitude,Longitude
   `, countryString)
 	fmt.Println("sQuery=", secQuery)
 	secResults, err := service.CoreRegistry.DB.Query(secQuery)
@@ -47,7 +47,7 @@ func (service *quest5UseCase) QuestC() (*model.Quest5CResponse, error) {
 	var resultQuest model.Quest5CResponse
 	for secResults.Next() {
 		var tempData model.Quest5CData
-		err = secResults.Scan(&tempData.Country, &tempData.City, &tempData.Latitude, &tempData.Longtitude)
+		err = secResults.Scan(&tempData.Country, &tempData.City, &tempData.Latitude, &tempData.Longitude)
 		if err != nil {
 			return nil, err
 		}

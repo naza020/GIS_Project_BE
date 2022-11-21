@@ -21,7 +21,7 @@ func (service *quest5UseCase) QuestE() (*model.Quest5EResponse, error) {
 		return nil, err
 	}
 
-	secQuery := fmt.Sprintf(`SELECT ID,Country,City,Latitude,Longtitude
+	secQuery := fmt.Sprintf(`SELECT ID,Country,City,Latitude,Longitude
 	FROM [dbo].[AirPollutionPM25] WHERE Country ='%s' AND Year=2011`, tempCountry)
 	fmt.Println("sQuery=", secQuery)
 	secResults, err := service.CoreRegistry.DB.Query(secQuery)
@@ -31,7 +31,7 @@ func (service *quest5UseCase) QuestE() (*model.Quest5EResponse, error) {
 	var resultQuest model.Quest5EResponse
 	for secResults.Next() {
 		var tempData model.Quest5EData
-		err = secResults.Scan(&tempData.ID, &tempData.Country, &tempData.City, &tempData.Latitude, &tempData.Longtitude)
+		err = secResults.Scan(&tempData.ID, &tempData.Country, &tempData.City, &tempData.Latitude, &tempData.Longitude)
 		if err != nil {
 			return nil, err
 		}

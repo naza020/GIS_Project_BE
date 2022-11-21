@@ -5,6 +5,6 @@ type Quest5DResponse struct {
 }
 
 type Quest5DMBR struct {
-	Latitude   float64 `json:"latitude"`
-	Longtitude float64 `json:"longtitude"`
+	Latitude  float64 `json:"latitude"`
+	Longitude float64 `json:"longitude"`
 }

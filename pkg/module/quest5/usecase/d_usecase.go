@@ -41,7 +41,7 @@ func (service *quest5UseCase) QuestD() (*model.Quest5DResponse, error) {
 		if err != nil {
 			return nil, err
 		}
-		resultQuest.Data = append(resultQuest.Data, model.Quest5DMBR{Latitude: lat, Longtitude: long})
+		resultQuest.Data = append(resultQuest.Data, model.Quest5DMBR{Latitude: lat, Longitude: long})
 	}
 	// fmt.Println("Data := ", sSplit)
 	// fmt.Println(len(resultQuest.Data))

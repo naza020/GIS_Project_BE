@@ -12,8 +12,8 @@ func (service *sqlUseCase) Insert(req *model.InsertDataRequest) (*model.InsertDa
 	}
 	count := 1
 	for _, item := range req.Data {
-		_, err := tx.Exec("INSERT INTO dbo.AirPollutionPM25(Country,City,Year,Pm25,Latitude,Longtitude,Population,Wbinc16_text,Region,Conc_pm25,Color_pm25) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
-			item.Country, item.City, item.Year, item.Pm25, item.Latitude, item.Longtitude, item.Population, item.Wbinc16, item.Region, item.Conc, item.Color)
+		_, err := tx.Exec("INSERT INTO dbo.AirPollutionPM25(Country,City,Year,Pm25,Latitude,Longitude,Population,Wbinc16_text,Region,Conc_pm25,Color_pm25) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+			item.Country, item.City, item.Year, item.Pm25, item.Latitude, item.Longitude, item.Population, item.Wbinc16, item.Region, item.Conc, item.Color)
 		if err != nil {
 			fmt.Println("err =", err)
 			tx.Rollback()
