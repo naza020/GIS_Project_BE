@@ -28,6 +28,7 @@ func main() {
 
 	// fmt.Println(records)
 	genJson()
+	genSql()
 }
 
 func genJson() {
@@ -45,7 +46,7 @@ func genJson() {
 	}
 	for col, row := range records {
 		if col != 0 {
-			tmpData := fmt.Sprintf(`{"city":"%s","color":"%s","conc":"%s","country":"%s","latitude":%s,"longtitude":%s,"pm25":%s,"population":%s,"region":"%s","wbinc16":"%s","year":%s}`,
+			tmpData := fmt.Sprintf(`{"city":"%s","color":"%s","conc":"%s","country":"%s","latitude":%s,"longitude":%s,"pm25":%s,"population":%s,"region":"%s","wbinc16":"%s","year":%s}`,
 				row[1], row[10], row[9], row[0], row[4], row[5], row[3], row[6], row[8], row[7], row[2])
 			_, err2 := f.WriteString(tmpData)
 			if err2 != nil {
@@ -77,8 +78,8 @@ func genSql() {
 	}
 
 	defer f.Close()
-	// _, err2 := f.WriteString("INSERT INTO AirPollutionPM25(Country,City,Year,Pm25,Latitude,Longtitude,Population,Wbinc16_text,Region,Conc_pm25,Color_pm25,geom) VALUES\n")
-	_, err2 := f.WriteString("INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES\n")
+	// _, err2 := f.WriteString("INSERT INTO AirPollutionPM25(Country,City,Year,Pm25,Latitude,Longitude,Population,Wbinc16_text,Region,Conc_pm25,Color_pm25,geom) VALUES\n")
+	_, err2 := f.WriteString("INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES\n")
 	if err2 != nil {
 		log.Fatal(err2)
 	}
@@ -93,8 +94,8 @@ func genSql() {
 				if err2 != nil {
 					log.Fatal(err2)
 				}
-				// _, err2 := f.WriteString("INSERT INTO AirPollutionPM25(Country,City,Year,Pm25,Latitude,Longtitude,Population,Wbinc16_text,Region,Conc_pm25,Color_pm25,geom) VALUES\n")
-				_, err2 := f.WriteString("INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES\n")
+				// _, err2 := f.WriteString("INSERT INTO AirPollutionPM25(Country,City,Year,Pm25,Latitude,Longitude,Population,Wbinc16_text,Region,Conc_pm25,Color_pm25,geom) VALUES\n")
+				_, err2 := f.WriteString("INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES\n")
 				if err2 != nil {
 					log.Fatal(err2)
 				}

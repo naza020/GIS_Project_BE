@@ -343,7 +343,7 @@ const docTemplate = `{
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 },
                 "pm25": {
@@ -417,7 +417,7 @@ const docTemplate = `{
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 },
                 "pm25": {
@@ -471,7 +471,7 @@ const docTemplate = `{
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 }
             }
@@ -511,7 +511,7 @@ const docTemplate = `{
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 },
                 "pm25": {
@@ -554,7 +554,7 @@ const docTemplate = `{
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 }
             }
@@ -576,7 +576,7 @@ const docTemplate = `{
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 }
             }
@@ -607,7 +607,7 @@ const docTemplate = `{
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 }
             }
@@ -638,7 +638,7 @@ const docTemplate = `{
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 }
             }
@@ -672,7 +672,7 @@ const docTemplate = `{
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 },
                 "pm25": {

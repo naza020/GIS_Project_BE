@@ -331,7 +331,7 @@
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 },
                 "pm25": {
@@ -405,7 +405,7 @@
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 },
                 "pm25": {
@@ -459,7 +459,7 @@
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 }
             }
@@ -499,7 +499,7 @@
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 },
                 "pm25": {
@@ -542,7 +542,7 @@
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 }
             }
@@ -564,7 +564,7 @@
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 }
             }
@@ -595,7 +595,7 @@
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 }
             }
@@ -626,7 +626,7 @@
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 }
             }
@@ -660,7 +660,7 @@
                 "latitude": {
                     "type": "number"
                 },
-                "longtitude": {
+                "longitude": {
                     "type": "number"
                 },
                 "pm25": {

@@ -1,4 +1,4 @@
-INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
+INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
 ('Albania','Tirana',2013,16.06236628,41.33026886,19.82177162,453509,'Upper middle income','Europe (LMIC)','15-<25','orange',geometry::Parse('POINT(41.33026886 19.82177162)')),
 ('Albania','Durres',2015,11.89351847,41.3199,19.4492,113249,'Upper middle income','Europe (LMIC)','10-<15','yellow',geometry::Parse('POINT(41.3199 19.4492)')),
 ('Albania','Durres',2016,14.29827251,41.3199,19.4492,113249,'Upper middle income','Europe (LMIC)','10-<15','yellow',geometry::Parse('POINT(41.3199 19.4492)')),
@@ -998,7 +998,7 @@ INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitu
 ('Brazil','Diadema',2012,16.10288418,-23.685527,-46.611323,386089,'Upper middle income','Americas (LMIC)','15-<25','orange',geometry::Parse('POINT(-23.685527 -46.611323)')),
 ('Brazil','Diadema',2013,14.72263697,-23.685527,-46.611323,386089,'Upper middle income','Americas (LMIC)','10-<15','yellow',geometry::Parse('POINT(-23.685527 -46.611323)')),
 ('Brazil','Diadema',2014,15.64280178,-23.685527,-46.611323,386089,'Upper middle income','Americas (LMIC)','15-<25','orange',geometry::Parse('POINT(-23.685527 -46.611323)'));
-INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
+INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
 ('Brazil','Diadema',2015,13.34238975,-23.685527,-46.611323,386089,'Upper middle income','Americas (LMIC)','10-<15','yellow',geometry::Parse('POINT(-23.685527 -46.611323)')),
 ('Brazil','Diadema',2016,12.42222494,-23.685527,-46.611323,386089,'Upper middle income','Americas (LMIC)','10-<15','yellow',geometry::Parse('POINT(-23.685527 -46.611323)')),
 ('Brazil','Dias D''Avila',2010,14.86066169,-12.604052,-38.325605,243497,'Upper middle income','Americas (LMIC)','10-<15','yellow',geometry::Parse('POINT(-12.604052 -38.325605)')),
@@ -1998,7 +1998,7 @@ INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitu
 ('China','Jinhua',2015,54,29.09301472,119.657362,970089,'Upper middle income','Western Pacific (LMIC)','>50','darkred',geometry::Parse('POINT(29.09301472 119.657362)')),
 ('China','Jinhua',2016,46,29.09301472,119.657362,970089,'Upper middle income','Western Pacific (LMIC)','35-<50','red',geometry::Parse('POINT(29.09301472 119.657362)')),
 ('China','Jinzhong',2016,62,37.687357,112.752652,512183,'Upper middle income','Western Pacific (LMIC)','>50','darkred',geometry::Parse('POINT(37.687357 112.752652)'));
-INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
+INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
 ('China','Jinzhou',2015,60,41.05881958,121.1184998,1034924,'Upper middle income','Western Pacific (LMIC)','>50','darkred',geometry::Parse('POINT(41.05881958 121.1184998)')),
 ('China','Jinzhou',2016,55,41.05881958,121.1184998,1034924,'Upper middle income','Western Pacific (LMIC)','>50','darkred',geometry::Parse('POINT(41.05881958 121.1184998)')),
 ('China','Jiujiang',2016,50,29.67571282,115.9988871,682276,'Upper middle income','Western Pacific (LMIC)','35-<50','red',geometry::Parse('POINT(29.67571282 115.9988871)')),
@@ -2998,7 +2998,7 @@ INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitu
 ('France','Arles',2016,13.85737693,43.675114,4.62921,52510,'High income','Europe (HIC)','10-<15','yellow',geometry::Parse('POINT(43.675114 4.62921)')),
 ('France','Armentieres',2013,14.99117874,50.68719,2.88004,25704,'High income','Europe (HIC)','10-<15','yellow',geometry::Parse('POINT(50.68719 2.88004)')),
 ('France','Armentieres',2014,11.72911545,50.68719,2.88004,25704,'High income','Europe (HIC)','10-<15','yellow',geometry::Parse('POINT(50.68719 2.88004)'));
-INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
+INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
 ('France','Armentieres',2015,11.5058737,50.68719,2.88004,25704,'High income','Europe (HIC)','10-<15','yellow',geometry::Parse('POINT(50.68719 2.88004)')),
 ('France','Armentieres',2016,10.83677174,50.68719,2.88004,25704,'High income','Europe (HIC)','10-<15','yellow',geometry::Parse('POINT(50.68719 2.88004)')),
 ('France','Arrest',2013,13.20622879,50.129448,1.610833,877,'High income','Europe (HIC)','10-<15','yellow',geometry::Parse('POINT(50.129448 1.610833)')),
@@ -3998,7 +3998,7 @@ INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitu
 ('France','Venissieux',2015,17.11472308,45.7078,4.8644,56061,'High income','Europe (HIC)','15-<25','orange',geometry::Parse('POINT(45.7078 4.8644)')),
 ('France','Venissieux',2016,13.78564406,45.7078,4.8644,56061,'High income','Europe (HIC)','10-<15','yellow',geometry::Parse('POINT(45.7078 4.8644)')),
 ('France','Verneuil',2013,12.36699611,46.814693,2.610068,38,'High income','Europe (HIC)','10-<15','yellow',geometry::Parse('POINT(46.814693 2.610068)'));
-INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
+INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
 ('France','Verneuil',2014,8.82149543,46.814693,2.610068,38,'High income','Europe (HIC)','<10','green',geometry::Parse('POINT(46.814693 2.610068)')),
 ('France','Verneuil',2015,11.60137762,46.814693,2.610068,38,'High income','Europe (HIC)','10-<15','yellow',geometry::Parse('POINT(46.814693 2.610068)')),
 ('France','Verneuil',2016,7.84498287,46.814693,2.610068,38,'High income','Europe (HIC)','<10','green',geometry::Parse('POINT(46.814693 2.610068)')),
@@ -4998,7 +4998,7 @@ INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitu
 ('Germany','Tauberbischofsheim',2014,11.50229943,49.634841,9.657919,12813,'High income','Europe (HIC)','10-<15','yellow',geometry::Parse('POINT(49.634841 9.657919)')),
 ('Germany','Tauberbischofsheim',2015,11.05740385,49.634841,9.657919,12813,'High income','Europe (HIC)','10-<15','yellow',geometry::Parse('POINT(49.634841 9.657919)')),
 ('Germany','Tauberbischofsheim',2016,11.00401661,49.634841,9.657919,12813,'High income','Europe (HIC)','10-<15','yellow',geometry::Parse('POINT(49.634841 9.657919)'));
-INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
+INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
 ('Germany','Tiefenbach',2014,8.641536934,49.438464,12.548869,6603,'High income','Europe (HIC)','<10','green',geometry::Parse('POINT(49.438464 12.548869)')),
 ('Germany','Tiefenbach',2015,8.8714,49.438464,12.548869,6603,'High income','Europe (HIC)','<10','green',geometry::Parse('POINT(49.438464 12.548869)')),
 ('Germany','Tiefenbach',2016,7.98493244,49.438464,12.548869,6603,'High income','Europe (HIC)','<10','green',geometry::Parse('POINT(49.438464 12.548869)')),
@@ -5998,7 +5998,7 @@ INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitu
 ('Italy','Casale Monferrato',2014,18.14368488,45.13612,8.44517,16220,'High income','Europe (HIC)','15-<25','orange',geometry::Parse('POINT(45.13612 8.44517)')),
 ('Italy','Casale Monferrato',2015,21.88661289,45.13612,8.44517,16220,'High income','Europe (HIC)','15-<25','orange',geometry::Parse('POINT(45.13612 8.44517)')),
 ('Italy','Casale Monferrato',2016,18.07018106,45.13612,8.44517,16220,'High income','Europe (HIC)','15-<25','orange',geometry::Parse('POINT(45.13612 8.44517)'));
-INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
+INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
 ('Italy','Casarotti',2013,28.62414582,45.4975,9.556389,18552,'High income','Europe (HIC)','25-<35','darkorange',geometry::Parse('POINT(45.4975 9.556389)')),
 ('Italy','Casarotti',2014,22.59745795,45.4975,9.556389,18552,'High income','Europe (HIC)','15-<25','orange',geometry::Parse('POINT(45.4975 9.556389)')),
 ('Italy','Casarotti',2015,26.64348007,45.4975,9.556389,18552,'High income','Europe (HIC)','25-<35','darkorange',geometry::Parse('POINT(45.4975 9.556389)')),
@@ -6998,7 +6998,7 @@ INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitu
 ('Italy','Zappellone',2016,20.78118496,45.08199189,9.71389,18552,'High income','Europe (HIC)','15-<25','orange',geometry::Parse('POINT(45.08199189 9.71389)')),
 ('Jamaica','Northern St. Catherine',2012,12.84479303,18.24051285,-77.09784698,15231,'Upper middle income','Americas (LMIC)','10-<15','yellow',geometry::Parse('POINT(18.24051285 -77.09784698)')),
 ('Jamaica','Old Harbour Plains',2012,18.41983387,17.90846634,-77.15579987,28912,'Upper middle income','Americas (LMIC)','15-<25','orange',geometry::Parse('POINT(17.90846634 -77.15579987)'));
-INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
+INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
 ('Jamaica','Portmore',2012,29.15120093,17.95727921,-76.87839508,182153,'Upper middle income','Americas (LMIC)','25-<35','darkorange',geometry::Parse('POINT(17.95727921 -76.87839508)')),
 ('Jamaica','South Eastern Manchester',2012,13.76343848,18.16666794,-77.56666565,46695,'Upper middle income','Americas (LMIC)','10-<15','yellow',geometry::Parse('POINT(18.16666794 -77.56666565)')),
 ('Jamaica','Vere Plains Clarendon',2012,22.8028014,17.86234093,-77.23965454,10639,'Upper middle income','Americas (LMIC)','15-<25','orange',geometry::Parse('POINT(17.86234093 -77.23965454)')),
@@ -7998,7 +7998,7 @@ INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitu
 ('Poland','Myszkow',2016,34.96208595,50.579733,19.3267,32817,'High income','Europe (HIC)','25-<35','darkorange',geometry::Parse('POINT(50.579733 19.3267)')),
 ('Poland','Naklo Nad Notecia',2013,32.17259174,53.138358,17.605139,19542,'High income','Europe (HIC)','25-<35','darkorange',geometry::Parse('POINT(53.138358 17.605139)')),
 ('Poland','Naklo Nad Notecia',2014,35.55197988,53.138358,17.605139,19542,'High income','Europe (HIC)','35-<50','red',geometry::Parse('POINT(53.138358 17.605139)'));
-INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
+INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
 ('Poland','Naklo Nad Notecia',2015,31.95146315,53.138358,17.605139,19542,'High income','Europe (HIC)','25-<35','darkorange',geometry::Parse('POINT(53.138358 17.605139)')),
 ('Poland','Naklo Nad Notecia',2016,29.75664245,53.138358,17.605139,19542,'High income','Europe (HIC)','25-<35','darkorange',geometry::Parse('POINT(53.138358 17.605139)')),
 ('Poland','Nidzica',2013,19.70669088,53.361144,20.422036,14258,'High income','Europe (HIC)','15-<25','orange',geometry::Parse('POINT(53.361144 20.422036)')),
@@ -8998,7 +8998,7 @@ INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitu
 ('Spain','Algete',2015,6.54598893,40.59333,-3.50306,20102,'High income','Europe (HIC)','<10','green',geometry::Parse('POINT(40.59333 -3.50306)')),
 ('Spain','Algete',2016,7.87401123,40.59333,-3.50306,20102,'High income','Europe (HIC)','<10','green',geometry::Parse('POINT(40.59333 -3.50306)')),
 ('Spain','Almassora',2013,7.92926284,39.94527777,-0.05638888,25522,'High income','Europe (HIC)','<10','green',geometry::Parse('POINT(39.94527777 -0.05638888)'));
-INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
+INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
 ('Spain','Almassora',2014,9.23615531,39.94527777,-0.05638888,25522,'High income','Europe (HIC)','<10','green',geometry::Parse('POINT(39.94527777 -0.05638888)')),
 ('Spain','Almassora',2015,7.97727272,39.94527777,-0.05638888,25522,'High income','Europe (HIC)','<10','green',geometry::Parse('POINT(39.94527777 -0.05638888)')),
 ('Spain','Almassora',2016,6.25992272,39.94527777,-0.05638888,25522,'High income','Europe (HIC)','<10','green',geometry::Parse('POINT(39.94527777 -0.05638888)')),
@@ -9998,7 +9998,7 @@ INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitu
 ('Sweden','Onsala',2016,3.77212643,57.3937,11.9142,12275,'High income','Europe (HIC)','<10','green',geometry::Parse('POINT(57.3937 11.9142)')),
 ('Sweden','Orebro',2016,4.517404981,59.26832,15.214897,115765,'High income','Europe (HIC)','<10','green',geometry::Parse('POINT(59.26832 15.214897)')),
 ('Sweden','Ornskoldsvik',2013,7.294083306,63.291375,18.716063,56139,'High income','Europe (HIC)','<10','green',geometry::Parse('POINT(63.291375 18.716063)'));
-INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
+INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
 ('Sweden','Ornskoldsvik',2014,8.209986878,63.291375,18.716063,56139,'High income','Europe (HIC)','<10','green',geometry::Parse('POINT(63.291375 18.716063)')),
 ('Sweden','Ornskoldsvik',2015,8.200200384,63.291375,18.716063,56139,'High income','Europe (HIC)','<10','green',geometry::Parse('POINT(63.291375 18.716063)')),
 ('Sweden','Ornskoldsvik',2016,7.180972515,63.291375,18.716063,56139,'High income','Europe (HIC)','<10','green',geometry::Parse('POINT(63.291375 18.716063)')),
@@ -10998,7 +10998,7 @@ INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitu
 ('United States of America','Athens',2014,7.8,39.44216537,-81.90882874,64757,'High income','Americas (HIC)','<10','green',geometry::Parse('POINT(39.44216537 -81.90882874)')),
 ('United States of America','Athens',2014,9,35.4501152,-84.59619141,52266,'High income','Americas (HIC)','<10','green',geometry::Parse('POINT(35.4501152 -84.59619141)')),
 ('United States of America','Athens-Clarke County',2014,10.3,33.91806793,-83.34449768,192541,'High income','Americas (HIC)','10-<15','yellow',geometry::Parse('POINT(33.91806793 -83.34449768)'));
-INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longtitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
+INSERT INTO AirPollutionPM25([Country],[City],[Year],[Pm25],[Latitude],[Longitude],[Population],[Wbinc16_text],[Region,Conc_pm25],[Color_pm25],[geom]) VALUES
 ('United States of America','Atlanta-Sandy Springs-Marietta',2014,10.38,33.68796921,-84.29048157,5268860,'High income','Americas (HIC)','10-<15','yellow',geometry::Parse('POINT(33.68796921 -84.29048157)')),
 ('United States of America','Atlantic City',2014,7.7,39.36325836,-74.43099976,248402,'High income','Americas (HIC)','<10','green',geometry::Parse('POINT(39.36325836 -74.43099976)')),
 ('United States of America','Augusta-Richmond County',2014,9.55,33.73996353,-81.8536377,564873,'High income','Americas (HIC)','<10','green',geometry::Parse('POINT(33.73996353 -81.8536377)')),

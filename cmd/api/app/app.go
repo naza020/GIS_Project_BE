@@ -4,7 +4,6 @@ import (
 	"database/sql"
 	"fmt"
 	"os"
-	"time"
 
 	"gis-project-backend/cmd/api/core/api"
 	"gis-project-backend/cmd/api/handler"
@@ -60,7 +59,7 @@ func Run() {
 	//Core
 	coreRegistry := &core.CoreRegistry{
 		Logger:     log,
-		RestClient: client.NewRestClient(client.ClientOption{Debug: false, Insecure: true, Timeout: 30 * time.Second}),
+		RestClient: client.NewRestClient(client.ClientOption{Debug: false, Insecure: true, Timeout: 0}),
 		DB:         db,
 	}
 	//Middleware

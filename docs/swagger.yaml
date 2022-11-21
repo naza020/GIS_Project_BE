@@ -27,7 +27,7 @@ definitions:
         type: integer
       latitude:
         type: number
-      longtitude:
+      longitude:
         type: number
       pm25:
         type: number
@@ -75,7 +75,7 @@ definitions:
         type: integer
       latitude:
         type: number
-      longtitude:
+      longitude:
         type: number
       pm25:
         type: number
@@ -110,7 +110,7 @@ definitions:
         type: integer
       latitude:
         type: number
-      longtitude:
+      longitude:
         type: number
     type: object
   model.Quest5AResponse:
@@ -136,7 +136,7 @@ definitions:
         type: integer
       latitude:
         type: number
-      longtitude:
+      longitude:
         type: number
       pm25:
         type: number
@@ -164,7 +164,7 @@ definitions:
         type: string
       latitude:
         type: number
-      longtitude:
+      longitude:
         type: number
     type: object
   model.Quest5CResponse:
@@ -178,7 +178,7 @@ definitions:
     properties:
       latitude:
         type: number
-      longtitude:
+      longitude:
         type: number
     type: object
   model.Quest5DResponse:
@@ -198,7 +198,7 @@ definitions:
         type: integer
       latitude:
         type: number
-      longtitude:
+      longitude:
         type: number
     type: object
   model.Quest5EResponse:
@@ -218,7 +218,7 @@ definitions:
         type: integer
       latitude:
         type: number
-      longtitude:
+      longitude:
         type: number
     type: object
   model.Quest5FResponse:
@@ -240,7 +240,7 @@ definitions:
         type: string
       latitude:
         type: number
-      longtitude:
+      longitude:
         type: number
       pm25:
         type: number
