@@ -29,8 +29,9 @@ func (handler *Quest5APIHandler) Init() {
 	router := handler.app.Group(endpoint)
 	router.Get("/a/:year", handler.GetQuestA)
 	router.Get("/b", handler.GetQuestB)
-	// router.Get("/c/:country", handler.GetQuestC)
-	// router.Get("/d/:year/:color", handler.GetQuestD)
+	router.Get("/c", handler.GetQuestC)
+	router.Get("/d", handler.GetQuestD)
+	router.Get("/e", handler.GetQuestE)
 	router.Get("/f/:year", handler.GetQuestF)
 }
 
@@ -55,6 +56,39 @@ func (handler *Quest5APIHandler) GetQuestA(c *fiber.Ctx) error {
 func (handler *Quest5APIHandler) GetQuestB(c *fiber.Ctx) error {
 	return api.Handler(c, func() (interface{}, error) {
 		return handler.Quest5UseCase.QuestB()
+	})
+}
+
+// @Tags quest5-api
+// @Summary Get Quest 5C
+// @Produce json
+// @Success 200 {object} model.Quest5CResponse
+// @Router /api/quest5/c [get]
+func (handler *Quest5APIHandler) GetQuestC(c *fiber.Ctx) error {
+	return api.Handler(c, func() (interface{}, error) {
+		return handler.Quest5UseCase.QuestC()
+	})
+}
+
+// @Tags quest5-api
+// @Summary Get Quest 5D
+// @Produce json
+// @Success 200 {object} model.Quest5DResponse
+// @Router /api/quest5/d [get]
+func (handler *Quest5APIHandler) GetQuestD(c *fiber.Ctx) error {
+	return api.Handler(c, func() (interface{}, error) {
+		return handler.Quest5UseCase.QuestD()
+	})
+}
+
+// @Tags quest5-api
+// @Summary Get Quest 5E
+// @Produce json
+// @Success 200 {object} model.Quest5EResponse
+// @Router /api/quest5/e [get]
+func (handler *Quest5APIHandler) GetQuestE(c *fiber.Ctx) error {
+	return api.Handler(c, func() (interface{}, error) {
+		return handler.Quest5UseCase.QuestE()
 	})
 }
 

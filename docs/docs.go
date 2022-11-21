@@ -183,6 +183,63 @@ const docTemplate = `{
                 }
             }
         },
+        "/api/quest5/c": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "quest5-api"
+                ],
+                "summary": "Get Quest 5C",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/model.Quest5CResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/quest5/d": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "quest5-api"
+                ],
+                "summary": "Get Quest 5D",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/model.Quest5DResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/quest5/e": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "quest5-api"
+                ],
+                "summary": "Get Quest 5E",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/model.Quest5EResponse"
+                        }
+                    }
+                }
+            }
+        },
         "/api/quest5/f/{year}": {
             "get": {
                 "produces": [
@@ -210,9 +267,61 @@ const docTemplate = `{
                     }
                 }
             }
+        },
+        "/api/sql/insert": {
+            "post": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "SQL"
+                ],
+                "summary": "Insert Data",
+                "parameters": [
+                    {
+                        "description": "body",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/model.InsertDataRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/model.InsertDataResponse"
+                        }
+                    }
+                }
+            }
         }
     },
     "definitions": {
+        "model.InsertDataRequest": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/model.RequestData"
+                    }
+                }
+            }
+        },
+        "model.InsertDataResponse": {
+            "type": "object",
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "record": {
+                    "type": "integer"
+                }
+            }
+        },
         "model.Quest4AData": {
             "type": "object",
             "properties": {
@@ -433,6 +542,87 @@ const docTemplate = `{
                 }
             }
         },
+        "model.Quest5CData": {
+            "type": "object",
+            "properties": {
+                "city": {
+                    "type": "string"
+                },
+                "county": {
+                    "type": "string"
+                },
+                "latitude": {
+                    "type": "number"
+                },
+                "longtitude": {
+                    "type": "number"
+                }
+            }
+        },
+        "model.Quest5CResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/model.Quest5CData"
+                    }
+                }
+            }
+        },
+        "model.Quest5DMBR": {
+            "type": "object",
+            "properties": {
+                "latitude": {
+                    "type": "number"
+                },
+                "longtitude": {
+                    "type": "number"
+                }
+            }
+        },
+        "model.Quest5DResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/model.Quest5DMBR"
+                    }
+                }
+            }
+        },
+        "model.Quest5EData": {
+            "type": "object",
+            "properties": {
+                "city": {
+                    "type": "string"
+                },
+                "county": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "latitude": {
+                    "type": "number"
+                },
+                "longtitude": {
+                    "type": "number"
+                }
+            }
+        },
+        "model.Quest5EResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/model.Quest5EData"
+                    }
+                }
+            }
+        },
         "model.Quest5FData": {
             "type": "object",
             "properties": {
@@ -461,6 +651,44 @@ const docTemplate = `{
                     "items": {
                         "$ref": "#/definitions/model.Quest5FData"
                     }
+                }
+            }
+        },
+        "model.RequestData": {
+            "type": "object",
+            "properties": {
+                "city": {
+                    "type": "string"
+                },
+                "color": {
+                    "type": "string"
+                },
+                "conc": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "latitude": {
+                    "type": "number"
+                },
+                "longtitude": {
+                    "type": "number"
+                },
+                "pm25": {
+                    "type": "number"
+                },
+                "population": {
+                    "type": "number"
+                },
+                "region": {
+                    "type": "string"
+                },
+                "wbinc16": {
+                    "type": "string"
+                },
+                "year": {
+                    "type": "integer"
                 }
             }
         }

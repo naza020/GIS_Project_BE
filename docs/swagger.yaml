@@ -1,4 +1,18 @@
 definitions:
+  model.InsertDataRequest:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/model.RequestData'
+        type: array
+    type: object
+  model.InsertDataResponse:
+    properties:
+      message:
+        type: string
+      record:
+        type: integer
+    type: object
   model.Quest4AData:
     properties:
       city:
@@ -142,6 +156,58 @@ definitions:
           $ref: '#/definitions/model.Quest5BData'
         type: array
     type: object
+  model.Quest5CData:
+    properties:
+      city:
+        type: string
+      county:
+        type: string
+      latitude:
+        type: number
+      longtitude:
+        type: number
+    type: object
+  model.Quest5CResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/model.Quest5CData'
+        type: array
+    type: object
+  model.Quest5DMBR:
+    properties:
+      latitude:
+        type: number
+      longtitude:
+        type: number
+    type: object
+  model.Quest5DResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/model.Quest5DMBR'
+        type: array
+    type: object
+  model.Quest5EData:
+    properties:
+      city:
+        type: string
+      county:
+        type: string
+      id:
+        type: integer
+      latitude:
+        type: number
+      longtitude:
+        type: number
+    type: object
+  model.Quest5EResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/model.Quest5EData'
+        type: array
+    type: object
   model.Quest5FData:
     properties:
       city:
@@ -161,6 +227,31 @@ definitions:
         items:
           $ref: '#/definitions/model.Quest5FData'
         type: array
+    type: object
+  model.RequestData:
+    properties:
+      city:
+        type: string
+      color:
+        type: string
+      conc:
+        type: string
+      country:
+        type: string
+      latitude:
+        type: number
+      longtitude:
+        type: number
+      pm25:
+        type: number
+      population:
+        type: number
+      region:
+        type: string
+      wbinc16:
+        type: string
+      year:
+        type: integer
     type: object
 info:
   contact: {}
@@ -272,6 +363,42 @@ paths:
       summary: Get Quest 5B
       tags:
       - quest5-api
+  /api/quest5/c:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.Quest5CResponse'
+      summary: Get Quest 5C
+      tags:
+      - quest5-api
+  /api/quest5/d:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.Quest5DResponse'
+      summary: Get Quest 5D
+      tags:
+      - quest5-api
+  /api/quest5/e:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.Quest5EResponse'
+      summary: Get Quest 5E
+      tags:
+      - quest5-api
   /api/quest5/f/{year}:
     get:
       parameters:
@@ -290,4 +417,23 @@ paths:
       summary: Get Quest 5F
       tags:
       - quest5-api
+  /api/sql/insert:
+    post:
+      parameters:
+      - description: body
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/model.InsertDataRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.InsertDataResponse'
+      summary: Insert Data
+      tags:
+      - SQL
 swagger: "2.0"

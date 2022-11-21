@@ -22,6 +22,7 @@ import (
 	//api
 	quest4 "gis-project-backend/pkg/module/quest4/usecase"
 	quest5 "gis-project-backend/pkg/module/quest5/usecase"
+	sqlQuest "gis-project-backend/pkg/module/sql/usecase"
 
 	_ "github.com/microsoft/go-mssqldb"
 )
@@ -30,7 +31,9 @@ func Run() {
 
 	//Log
 	log := appLogger.NewLogger("./logs/app.log")
-	connectionString := fmt.Sprintf("user id=%s;password=%s;port=%s;database=%s", "sa", "@dmin", "1433", "SpatialDB")
+	connectionString := fmt.Sprintf("sqlserver://%s:%s@%s:%s?database=%s", "sa", "@dmin", "localhost", "1433", "SpatialDB")
+	// connectionString := fmt.Sprintf("sqlserver://%s:%s@%s:%s?database=%s", "sa", "@dmin", "localhost", "1433", "SpatialDB")
+	// connectionString := fmt.Sprintf("user id=%s;password=%s;port=%s;database=%s", "sa", "@dmin", "1433", "SpatialDB")
 	db, err := sql.Open("mssql", connectionString)
 	if err != nil {
 		panic(err.Error())
@@ -67,9 +70,11 @@ func Run() {
 
 	quest4UseCase := quest4.NewQuest4UseCase(coreRegistry)
 	quest5UseCase := quest5.NewQuest5UseCase(coreRegistry)
+	sqlUseCase := sqlQuest.NewSQLUseCase(coreRegistry)
 
 	handler.NewQuest4APIHandler(app, coreRegistry, quest4UseCase).Init()
 	handler.NewQuest5APIHandler(app, coreRegistry, quest5UseCase).Init()
+	handler.NewSQLAPIHandler(app, coreRegistry, sqlUseCase).Init()
 
 	hostname := "localhost"
 	port := "9090"

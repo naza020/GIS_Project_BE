@@ -19,6 +19,8 @@ http://localhost:9090/swagger/
 ## Database
  config อยู่ใน cmd/api/app/app.go
 
+x= latitude y=longtitude
+
   default config
 ```bash
  connectionString := fmt.Sprintf("user id=%s;password=%s;port=%s;database=%s", "sa", "@dmin", "1433", "SpatialDB")
@@ -53,4 +55,9 @@ CREATE TABLE AirPollutionPM25(
     Color_pm25 varchar(255),
     geom GEOMETRY,
 );
+ ```
+
+## NGROK
+ ```bash
+ngrok http -region ap 9090
  ```
